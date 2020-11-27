@@ -23,14 +23,27 @@ span {
     display: inline-block;
 }
 
+section.wrapper-1 {
+    padding: 100px 80px;
+}
 
+section.wrapper {
+    padding: 100px 80px;
+    text-align: center;
+}
+
+section.wrapper-leao {
+    padding: 100px 80px;
+    text-align: center;
+}
+/*background------------------------------------------------------------------*/
 main {
     background-image: url('../img/bg-hero.jpg');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-
+/*cabeçalho----------------------------------------------------------------------*/
 div.login{
     background-color: rgba(0,0,0, 0.5);
     text-align: center;
@@ -60,15 +73,7 @@ a.entrar:hover {
     color: black;
 }
 
-section.wrapper {
-    padding: 100px 80px;
-}
-
-footer {
-    border: chartreuse solid;
-    padding: 26px 8px;
-}
-
+/*1° section-----------------------------------------------------------------*/
 div.hero-content {
     width: 630px;
     /*top: 100px;*/
@@ -81,7 +86,6 @@ img.logo {
 
 div.planos {
     margin-left: -12px;
-
 }
 
 div.planos span {
@@ -94,7 +98,6 @@ div.plano-1, .plano-2 {
     padding: 0 12px;
     vertical-align: top;
     width: 49%;
-    height: 100%;
 }
 
 div.planos h3 {
@@ -149,27 +152,26 @@ img.img-grid {
     width: 100%;
 }
 
-div.foreground-image, .meta{
+/*2° e 4° section-------------------------------------------------------------*/
+.meta h2, .meta-leao h2 {
+    text-align: left;
+    font-size: 2.5em;
+    margin: 0px 0px 30px;
+}
+
+div.foreground-image, div.foreground-leao-image, .meta, .meta-leao {
     display: inline-block;
     height: 100%;
     width: 49%;
     vertical-align: middle;
 }
 
-.meta {
+.meta, .meta-leao {
     padding: 0px 45px;
     margin: 20px 0px 0px;
 }
-.img-foreground {
-    width: 100%;
-}
 
-.meta h2 {
-    font-size: 2.5em;
-    margin: 0px 0px 30px;
-}
-
-.meta p {
+.meta p , .meta-leao p{
     font-size: 1.1em;
     color: hsla(0,0%,75.3%,.8);
     line-height: 1.5em;
@@ -177,10 +179,17 @@ div.foreground-image, .meta{
     text-align: left;
 }
 
-.img-rei-leao {
+.img-foreground {
+    width: 100%;
+}
+
+.img-reileao {
     width: 200%;
 }
 
+
+
+/*3° e 5° section---------------------------------------------------------------*/
 .meta-2 {
     text-align: center;
 }
@@ -207,9 +216,8 @@ div.grid-capa img {
     width: 100%;
     border-radius: 4px;
 }
-
+/*6° section-----------------------------------------------------------------------*/
 div.grid-device {
-    border: crimson solid 1px;
     margin: 0 auto;
     vertical-align: top;
     width: 23%;
@@ -234,3 +242,171 @@ div.grid-device p {
     font-weight: 400;
 }
     
+/*footer-------------------------------------------------------------------------*/
+footer {
+    padding: 0 80px 30px;
+    text-align: center;
+    font-size: 11px;
+    color:  hsla(0,0%,75.3%,.8);
+    line-height: 20px;
+}
+
+img.logo-footer {
+    height: 50px;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer li {
+    display: inline-block;
+}
+
+.footer li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color:  hsla(0,0%,75.3%,.8);
+    line-height: 30px
+}
+
+.footer li a:hover {
+    color:  white;
+}
+
+footer p {
+    margin-top: 25px;
+}
+
+footer select {
+    color: white;
+    background-color: #040714;
+    border: none;
+    color:  hsla(0,0%,75.3%,.8);
+}
+
+footer select:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/*viewport---------------*/
+@media (max-width: 800px) {
+    section.wrapper, section.wrapper-1, section.wrapper-leao, footer{
+        padding: 45px 30px;
+    }
+
+    main {
+        background-image: url('../img/bg-hero-mobile');
+    }
+
+    div.login{
+        background-color: rgba(0,0,0, 0);
+        border: none;
+        right: 15px;
+    }
+
+    div.hero-content {
+        width: 90%;
+        margin: 180px auto 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    div.planos h3 {
+        margin: 0 0 8px;
+        font-size: 20px;
+    }
+
+    div.planos {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    div.plano-1, .plano-2 {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        padding-bottom: 15px;
+    }
+
+    div.plano-1 {
+        border-bottom: rgba(255, 255, 255, 0.555) solid 1px;
+        margin-bottom: 20px;
+    }
+
+    .p-plano-1 {
+        margin: 0 0 16px;
+        text-align: center;
+    }
+
+    .p-plano-2 {
+        text-align: center;
+    }
+
+    .p-oferta {
+        font-size: 9px;
+        text-align: center;
+    }
+    
+    img.img-grid {
+        display: none;
+    }
+
+
+    div.foreground-image, div.foreground-leao-image, .meta, .meta-leao{
+        display: block;
+        width: 100%;
+    }
+
+    .img-reileao {
+        opacity: 0;
+        width: 100%;
+    }
+
+    div.foreground-leao-image{
+        background-image: url('../img/o-rei-leo-mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .meta h2, .meta-leao h2, .meta-2 h2 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .meta p , .meta-leao p, .meta-2 p{
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+
+    div.grid-capa {
+        width: 49%;
+    }
+
+
+    div.grid-device {
+        width: 49%;
+    }
+
+    div.grid-device h3 {
+        font-size: 1em;    
+    }
+
+    div.grid-device p {
+        font-size: 1em;
+        line-height: 1.3em;      
+    }
+}
+
+@media (max-width: 323px) {
+    div.btn-teste-gratis-1, .btn-teste-gratis-2 {
+        padding: 10px 14px;
+    }
+}
