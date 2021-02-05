@@ -292,8 +292,13 @@ footer select:hover {
 
 /*viewport---------------*/
 @media (max-width: 800px) {
-    section.wrapper, section.wrapper-1, section.wrapper-leao, footer{
+    section.wrapper, section.wrapper-1, footer{
         padding: 45px 30px;
+    }
+    section.wrapper-leao {
+        padding: 45px 30px;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     main {
@@ -331,7 +336,7 @@ footer select:hover {
         text-align: center;
         display: block;
         margin: 0 auto;
-        width: 70%;
+        width: 340px;
         padding-bottom: 15px;
     }
 
@@ -402,6 +407,16 @@ footer select:hover {
     div.grid-device p {
         font-size: 1em;
         line-height: 1.3em;      
+    }
+}
+
+@media (max-width: 420px) {
+    div.plano-1, .plano-2 {
+        width: 100%;
+    }
+
+    section.wrapper, section.wrapper-1, footer{
+        padding: 40px 20px;
     }
 }
 
